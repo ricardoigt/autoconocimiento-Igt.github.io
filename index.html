@@ -1,204 +1,156 @@
+<!DOCTYPE html>
 <html lang="en">
-        
-    <head>
-        <meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/Hi8UmRMnhdOBM3IuViTkapUP/recaptcha__es.js" crossorigin="anonymous" integrity="sha384-Q0CiDm7B4cWYldUe4G16gGFFF6KndmaPfZnxdMYVGoS9hTdn9ajzjD+yGY4X3IO/"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38417733-17&amp;cx=c&amp;gtm=45je5571v887308581za200&amp;tag_exp=101509156~103101750~103101752~103116026~103130495~103130497~103200004~103233424~103251618~103251620~103284320~103284322~103301114~103301116"></script><script id="ga-gtag" async="" src="https://www.googletagmanager.com/gtag/js?id=G-PZXV45BPZN"></script>
-        <meta charset="utf-8">
-        <title>Grayscale - Theme Preview - Start Bootstrap</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 
+<style>
 
-    <style>
-    
-    
-    @media (prefers-reduced-motion: no-preference){:root{scroll-behavior:smooth}}
-    
-    body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
-    
-    html,body{height:100%}body{overflow-x:hidden}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-Thin.otf);font-weight:100;font-style:normal}
-    
-    @font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-ThinItalic.otf);font-weight:100;font-style:italic}
-    @font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-ExtraLight.otf);font-weight:200;font-style:normal}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-ExtraLightItalic.otf);font-weight:200;font-style:italic}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-Light.otf);font-weight:300;font-style:normal}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-LightItalic.otf);font-weight:300;font-style:italic}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-Regular.otf);font-weight:400;font-style:normal}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-RegularItalic.otf);font-weight:400;font-style:italic}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-Medium.otf);font-weight:500;font-style:normal}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-MediumItalic.otf);font-weight:500;font-style:italic}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-SemiBold.otf);font-weight:600;font-style:normal}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-SemiBoldItalic.otf);font-weight:600;font-style:italic}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-Bold.otf);font-weight:700;font-style:normal}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-BoldItalic.otf);font-weight:700;font-style:italic}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-ExtraBold.otf);font-weight:800;font-style:normal}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-ExtraBoldItalic.otf);font-weight:800;font-style:italic}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-Black.otf);font-weight:800;font-style:normal}@font-face{font-family:Metropolis;src:url(/assets/fonts/metropolis/Metropolis-BlackItalic.otf);font-weight:800;font-style:italic}:root{--litepicker-month-header-color:#4a515b;--litepicker-button-prev-month-color:#69707a;--litepicker-button-next-month-color:#69707a;--litepicker-button-prev-month-color-hover:#212832;--litepicker-button-next-month-color-hover:#212832;--litepicker-month-weekday-color:#69707a;--litepicker-month-week-number-color:#69707a;--litepicker-day-width:34px;--litepicker-day-color:#363d47;--litepicker-day-color-hover:#dc392d;--litepicker-is-today-color:#69707a;--litepicker-is-in-range-color:rgba(220, 57, 45, .15);--litepicker-is-start-color:#fff;--litepicker-is-start-color-bg:#dc392d;--litepicker-is-end-color:#fff;--litepicker-is-end-color-bg:#dc392d;--litepicker-button-apply-color-bg:#dc392d;--litepicker-button-reset-color-hover:#dc392d;--litepicker-highlighted-day-color:#363d47;--litepicker-highlighted-day-color-bg:rgba(220, 57, 45, .15)}</style><link rel="stylesheet" href="styles.19e555e2fc527962.css" crossorigin="anonymous" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.19e555e2fc527962.css"></noscript><link rel="preload" as="script" href="/src_modules_site_site-routing_module_ts.a66f888fa0637596.js" crossorigin="script"><link rel="preload" as="font" href="/assets/fonts/metropolis/Metropolis-SemiBold.otf" crossorigin="font"><link rel="preload" as="font" href="/assets/fonts/metropolis/Metropolis-Medium.otf" crossorigin="font"><link rel="preload" as="font" href="/assets/fonts/metropolis/Metropolis-Regular.otf" crossorigin="font"><link rel="preload" as="font" href="/assets/fonts/metropolis/Metropolis-Bold.otf" crossorigin="font"><link rel="preload" as="font" href="/assets/fonts/metropolis/Metropolis-RegularItalic.otf" crossorigin="font"><style>@keyframes slide-in-one-tap {
-  
-        from {
-    transform: translateY(80px);
-  }
-
-  to {
-    transform: translateY(0px);
-  }
+  body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.trust-hide-gracefully {
-  opacity: 0;
+#mainNav {
+    min-height: 3.5rem;
+    background-color: #fff;
 }
 
-.trust-wallet-one-tap .hidden {
-    display: none;
-  }
-
-.trust-wallet-one-tap .semibold {
-    font-weight: 500;
-  }
-
-.trust-wallet-one-tap .binance-plex {
-    font-family: 'Binance';
-  }
-
-.trust-wallet-one-tap .rounded-full {
-    border-radius: 50%;
-  }
-
-.trust-wallet-one-tap .flex {
-    display: flex;
-  }
-
-.trust-wallet-one-tap .flex-col {
-    flex-direction: column;
-  }
-
-.trust-wallet-one-tap .items-center {
-    align-items: center;
-  }
-
-.trust-wallet-one-tap .space-between {
-    justify-content: space-between;
-  }
-
-.trust-wallet-one-tap .justify-center {
-    justify-content: center;
-  }
-
-.trust-wallet-one-tap .w-full {
-    width: 100%;
-  }
-
-.trust-wallet-one-tap .box {
-    transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
-    animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
-    width: 384px;
-    border-radius: 15px;
-    background: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+.fixed-top {
     position: fixed;
-    right: 30px;
-    bottom: 30px;
-    z-index: 1020;
-  }
-
-.trust-wallet-one-tap .header {
-    gap: 15px;
-    border-bottom: 1px solid #e6e6e6;
-    padding: 10px 18px;
-  }
-
-.trust-wallet-one-tap .header .left-items {
-      gap: 15px;
-    }
-
-.trust-wallet-one-tap .header .title {
-      color: #1e2329;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 28px;
-    }
-
-.trust-wallet-one-tap .header .subtitle {
-      color: #474d57;
-      font-size: 14px;
-      line-height: 20px;
-    }
-
-.trust-wallet-one-tap .header .close {
-      color: #1e2329;
-      cursor: pointer;
-    }
-
-.trust-wallet-one-tap .body {
-    padding: 9px 18px;
-    gap: 10px;
-  }
-
-.trust-wallet-one-tap .body .right-items {
-      gap: 10px;
-      width: 100%;
-    }
-
-.trust-wallet-one-tap .body .right-items .wallet-title {
-        color: #1e2329;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-      }
-
-.trust-wallet-one-tap .body .right-items .wallet-subtitle {
-        color: #474d57;
-        font-size: 14px;
-        line-height: 20px;
-      }
-
-.trust-wallet-one-tap .connect-indicator {
-    gap: 15px;
-    padding: 8px 0;
-  }
-
-.trust-wallet-one-tap .connect-indicator .flow-icon {
-      color: #474d57;
-    }
-
-.trust-wallet-one-tap .loading-color {
-    color: #fff;
-  }
-
-.trust-wallet-one-tap .button {
-    border-radius: 50px;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    background-color: rgb(5, 0, 255);
-    border-color: rgb(229, 231, 235);
-    cursor: pointer;
-    text-align: center;
-    height: 45px;
-  }
-
-.trust-wallet-one-tap .button .button-text {
-      color: #fff;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 20px;
-    }
-
-.trust-wallet-one-tap .footer {
-    margin: 20px 30px;
-  }
-
-.trust-wallet-one-tap .check-icon {
-    color: #fff;
-  }
-
-@font-face {
-  font-family: 'Binance';
-  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf) format('opentype');
-  font-weight: 400;
-  font-style: normal;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
-@font-face {
-  font-family: 'Binance';
-  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf) format('opentype');
-  font-weight: 500;
-  font-style: normal;
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(0, 0, 0, 0.55);
+    --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+    --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+    --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+    --bs-navbar-toggler-border-radius: 0.375rem;
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex
+;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 
-@font-face {
-  font-family: 'Binance';
-  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf) format('opentype');
-  font-weight: 600;
-  font-style: normal;
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+    display: flex
+;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(../assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.about-section {
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+.text-center {
+    text-align: center !important;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+hoja de estilo del usuario-agente
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+
+
 </style>
-        <link rel="canonical" href="https://startbootstrap.com/previews/grayscale">
-        <meta name="description" content="Grayscale is a free Bootstrap theme for portfolios, business, landing pages, or any other website type. The dark color scheme with a hint of color makes for a beautiful landing page design." data-dynamic="true"><meta name="og:description" content="Grayscale is a free Bootstrap theme for portfolios, business, landing pages, or any other website type. The dark color scheme with a hint of color makes for a beautiful landing page design." data-dynamic="true"><meta name="og:image" content="https://assets.startbootstrap.com/img/meta/products/og/og-image-grayscale.png" data-dynamic="true"><meta name="og:image:alt" content="Grayscale Preview Image" data-dynamic="true"><meta name="og:image:height" content="630" data-dynamic="true"><meta name="og:image:secure_url" content="https://assets.startbootstrap.com/img/meta/products/og/og-image-grayscale.png" data-dynamic="true"><meta name="og:image:width" content="1200" data-dynamic="true"><meta name="og:locale" content="en_US" data-dynamic="true"><meta name="og:site_name" content="Start Bootstrap" data-dynamic="true"><meta name="og:title" content="Grayscale - Theme Preview" data-dynamic="true"><meta name="og:type" content="website" data-dynamic="true"><meta name="og:url" content="https://startbootstrap.com/previews/grayscale" data-dynamic="true"><meta name="twitter:card" content="summary_large_image" data-dynamic="true"><meta name="twitter:description" content="Grayscale is a free Bootstrap theme for portfolios, business, landing pages, or any other website type. The dark color scheme with a hint of color makes for a beautiful landing page design." data-dynamic="true"><meta name="twitter:image" content="https://assets.startbootstrap.com/img/meta/products/twitter/twitter-image-grayscale.png" data-dynamic="true"><meta name="twitter:site" content="@SBootstrap" data-dynamic="true"><meta name="twitter:title" content="Grayscale - Theme Preview" data-dynamic="true"><style>[_nghost-serverApp-c45]{position:fixed;bottom:0;right:0;margin:.5em;z-index:1200;width:350px}</style><style>#overlay[_ngcontent-serverApp-c106]{display:flex;justify-content:center;position:fixed;top:0;left:0;width:100vw;height:100%;min-height:100vh;z-index:1090;background-color:#00000080}</style><style>.preview-container[_ngcontent-serverApp-c116]{height:100vh;background-color:#212832}.preview-bar[_ngcontent-serverApp-c116]{height:63px}.preview-bar[_ngcontent-serverApp-c116]   .responsive-toggler[_ngcontent-serverApp-c116]{display:flex}.preview-bar[_ngcontent-serverApp-c116]   .responsive-toggler.active[_ngcontent-serverApp-c116]{color:#dc392d}.dropdown-licenses[_ngcontent-serverApp-c116]{display:inline-block}.dropdown-licenses[_ngcontent-serverApp-c116]   .features-list[_ngcontent-serverApp-c116]{color:#a7aeb8;font-size:.875em;padding-left:1rem}.iframe-preview[_ngcontent-serverApp-c116]{position:absolute;height:calc(100% - 63px);width:100%;border:none;margin-top:63px}.iframe-preview-full[_ngcontent-serverApp-c116]{height:100%!important;margin-top:0!important}.iframe-preview-mobile[_ngcontent-serverApp-c116]{width:375px;left:50%;transform:translate(-50%)}.iframe-preview-tablet[_ngcontent-serverApp-c116]{width:768px;left:50%;transform:translate(-50%)}.border-bottom-primary[_ngcontent-serverApp-c116]{border-bottom:3px #c5ccd6 solid}</style><script id="known-script-grecaptcha" src="https://www.google.com/recaptcha/api.js?render=6LdsldUZAAAAAFavGw6UEqjhXW2dfa3gXXVg46Za"></script></head>
-    <body>
-        <app-root _nghost-serverapp-c107="" ng-version="15.2.5"><sbpro-toast-view _ngcontent-serverapp-c107="" aria-live="polite" aria-atomic="true" class="ngb-toasts" _nghost-serverapp-c45=""><!----></sbpro-toast-view><sbw-overlay _ngcontent-serverapp-c107="" _nghost-serverapp-c106=""><!----></sbw-overlay><router-outlet _ngcontent-serverapp-c107=""></router-outlet><sbw-preview _nghost-serverapp-c116=""><div _ngcontent-serverapp-c116="" class="preview-container"><div _ngcontent-serverapp-c116="" class="preview-bar bg-white fixed-top py-2 border-bottom-primary"><div _ngcontent-serverapp-c116="" class="container-fluid h-100"><div _ngcontent-serverapp-c116="" class="row align-items-center justify-content-between h-100"><div _ngcontent-serverapp-c116="" class="col-auto col-lg"><a _ngcontent-serverapp-c116="" class="btn btn-transparent-dark btn-sm" href="/theme/grayscale"><fa-icon _ngcontent-serverapp-c116="" size="sm" class="ng-fa-icon me-1"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left fa-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M4.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l176 176c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6L54.6 272 432 272c8.8 0 16-7.2 16-16s-7.2-16-16-16L54.6 240 203.3 91.3c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0l-176 176z"></path></svg></fa-icon><!----><span _ngcontent-serverapp-c116="">Overview Page</span><!----></a><!----></div><div _ngcontent-serverapp-c116="" class="col col-auto d-none d-xl-block"><div _ngcontent-serverapp-c116="" class="responsive-toggler justify-content-center"><button _ngcontent-serverapp-c116="" id="desktopToggle" placement="bottom" ngbtooltip="Desktop Preview" class="btn btn-icon btn-transparent-dark mx-1 active"><fa-icon _ngcontent-serverapp-c116="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="desktop" class="svg-inline--fa fa-desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M512 32H64C46.3 32 32 46.3 32 64V256H544V64c0-17.7-14.3-32-32-32zm64 224v32 64c0 35.3-28.7 64-64 64H362.9l10.7 64H432c8.8 0 16 7.2 16 16s-7.2 16-16 16H360 216 144c-8.8 0-16-7.2-16-16s7.2-16 16-16h58.4l10.7-64H64c-35.3 0-64-28.7-64-64V288 256 64C0 28.7 28.7 0 64 0H512c35.3 0 64 28.7 64 64V256zM32 288v64c0 17.7 14.3 32 32 32H231.7c.2 0 .4 0 .6 0H343.7c.2 0 .4 0 .6 0H512c17.7 0 32-14.3 32-32V288H32zM234.9 480H341.1l-10.7-64H245.6l-10.7 64z"></path></svg></fa-icon></button><!----><button _ngcontent-serverapp-c116="" id="tabletToggle" placement="bottom" ngbtooltip="Tablet Preview" class="btn btn-icon btn-transparent-dark mx-1"><fa-icon _ngcontent-serverapp-c116="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="tablet" class="svg-inline--fa fa-tablet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M64 32C46.3 32 32 46.3 32 64V448c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H64zM0 64C0 28.7 28.7 0 64 0H384c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM192 400h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H192c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path></svg></fa-icon></button><!----><button _ngcontent-serverapp-c116="" id="mobileToggle" placement="bottom" ngbtooltip="Mobile Preview" class="btn btn-icon btn-transparent-dark mx-1"><fa-icon _ngcontent-serverapp-c116="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="mobile" class="svg-inline--fa fa-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M96 32C78.3 32 64 46.3 64 64V448c0 17.7 14.3 32 32 32H288c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H96zM32 64C32 28.7 60.7 0 96 0H288c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V64zM160 400h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path></svg></fa-icon></button><!----></div></div><div _ngcontent-serverapp-c116="" class="col text-end"><!----><a _ngcontent-serverapp-c116="" class="btn btn-transparent-dark btn-sm me-2" href="https://github.com/StartBootstrap/startbootstrap-grayscale"><fa-icon _ngcontent-serverapp-c116="" class="ng-fa-icon text-github"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></fa-icon></a><!----><a _ngcontent-serverapp-c116="" class="btn btn-primary-soft text-primary btn-sm d-none d-sm-inline-block me-2" href="https://github.com/StartBootstrap/startbootstrap-grayscale/archive/gh-pages.zip"><fa-icon _ngcontent-serverapp-c116="" class="ng-fa-icon me-1"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="download" class="svg-inline--fa fa-download" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g class="fa-duotone-group"><path class="fa-secondary" fill="currentColor" d="M178.7 352H64c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H333.3l-54.6 54.6c-12.5 12.5-32.8 12.5-45.3 0L178.7 352zM408 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"></path><path class="fa-primary" fill="currentColor" d="M256 0c17.7 0 32 14.3 32 32V306.7l73.4-73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-128 128c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 306.7V32c0-17.7 14.3-32 32-32z"></path></g></svg></fa-icon>Free Download</a><!----><button _ngcontent-serverapp-c116="" class="btn btn-transparent-dark btn-sm btn-icon"><fa-icon _ngcontent-serverapp-c116="" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="xmark" class="svg-inline--fa fa-xmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M324.5 411.1c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6L214.6 256 347.1 123.5c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0L192 233.4 59.5 100.9c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6L169.4 256 36.9 388.5c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0L192 278.6 324.5 411.1z"></path></svg></fa-icon></button></div></div></div></div><!----><iframe _ngcontent-serverapp-c116="" width="100%" class="iframe-preview" src="https://startbootstrap.github.io/startbootstrap-grayscale/"></iframe></div><!----><!----></sbw-preview><!----></app-root>
-    <script src="runtime.78fe65772c8aff3e.js" type="module" crossorigin="anonymous"></script><script src="polyfills.f3824fe6dc0460ae.js" type="module" crossorigin="anonymous"></script><script src="scripts.cd816875f3dc91fb.js" defer="" crossorigin="anonymous"></script><script src="main.6700dedd9b90aef0.js" type="module" crossorigin="anonymous"></script>
 
-<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-xp9b13nkku07" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdsldUZAAAAAFavGw6UEqjhXW2dfa3gXXVg46Za&amp;co=aHR0cHM6Ly9zdGFydGJvb3RzdHJhcC5jb206NDQz&amp;hl=es&amp;v=Hi8UmRMnhdOBM3IuViTkapUP&amp;size=invisible&amp;cb=ad0iohcle41g"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></body></html>
+<body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg><!-- <i class="fas fa-bars"></i> Font Awesome fontawesome.com -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+<header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+                        <a class="btn btn-primary" href="#about">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+</body>
+</html>
