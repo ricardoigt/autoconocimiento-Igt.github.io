@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="icon" href="isotipo.jpeg" type="image/png">
+
+    <title>Adminline</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #000000; /* Color de fondo de la página */
+            color: #000; /* Color del texto */
+            line-height: 1.5;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Cambiado para distribuir el espacio */
+            padding: 10px 20px;
+            background-color: #000000;
+
+        }
+
+        .nav-links {
+            display: flex; /* Asegura que los enlaces se alineen horizontalmente */
+            flex: 1; /* Permite que ocupe el espacio disponible */
+            justify-content: center; /* Centra los enlaces en el navbar */
+        }
+
+        .cta-button {
+            margin-left: auto; /* Asegura que el botón se alinee a la derecha */
+        }
+
+
+        .logo img{
+            height: 95px; /* Ajusta el tamaño del logo */
+            margin-right: 10px;  
+            width: 150px;
+
+        }
+
+        .navbar ul {
+            display: flex;
+            flex: 1; /* Permite que ocupe el espacio disponible */
+            justify-content: center; /* Centra los enlaces en el navbar */
+        }
+        
+
+
+        .navbar ul li {
+            padding: 10px;
+        } 
+
+        .navbar ul.nav-links {
+            flex: 1;
+            margin-left: 20px;
+        }   
+
+
+        .nav-links a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #2889ff;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 5%;
+            background: linear-gradient(45deg, #5f62ff, #3fc9ff);
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #f1f1f1;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s forwards;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #f6f6f6;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s 0.2s forwards;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            background:linear-gradient(45deg, #5f62ff, #3fc9ff) ;
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s 0.4s forwards;
+        }
+
+        .cta-button:hover {
+            background-color: #ab57ff;
+            transform: translateY(-2px);
+            position: relative;
+        }
+
+        .features {
+            padding: 5rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #5f62ff, #3fc9ff);
+            box-shadow: 0 5px 15px #ffffff1a;
+            transition: transform 0.5s ease;
+            
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+            transform: rotate(0deg); 
+        }
+
+        img-1 {
+            filter: grayscale(50px);
+        }
+        
+
+        .image-container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 5%;
+        position: relative;
+        background: url('WhatsApp Image 2025-04-10 at 10.24.08 AM (1).jpeg') no-repeat center center/cover;
+        }
+
+        .image-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+        z-index: 1;
+        }
+
+        .img-contenido {
+            position: relative;
+            z-index: 2; /* Asegura que el contenido esté por encima de la capa opaca */
+        }
+
+        .img-contenido h1 {
+            font-size: 3rem; /* Tamaño de fuente aumentado */
+            color: #FFFFFF; /* Color del texto */
+            opacity: 1; /* Asegúrate de que sea visible */
+            transform: translateY(0); /* Asegúrate de que no esté desplazado */
+            animation: none; /* Desactiva la animación si es necesario */
+        }
+        .img-contenido h2,
+        .img-contenido p {
+            color: #FFFFFF; /* Color del texto */
+        }
+
+        .comments-section {
+            padding: 2rem;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #5f62ff, #3fc9ff);
+            color: #000000 ;
+            transition: transform 0.5s ease;
+        }
+
+        .comments-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        #commentForm {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #name, #comment {
+            margin-bottom: 1rem;
+            padding: 10px;
+            border: 1px solid #fcfcfc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #2f37d4;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6d56ec;
+        }
+
+        #commentsList {
+            margin-top: 1rem;
+        }
+
+
+
+        footer {
+            background: linear-gradient(45deg, #5f62ff, #3fc9ff);
+            color: #050505;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo img"><img src="logo fondo negro.jpeg"></div>
+        <div class="nav-links">
+            <a href="#home">Inicio</a>
+            <a href="#features">Servicios</a>
+            <a href="#contact">Contacto</a>
+        </div>
+        <button class="cta-button" onclick="window.location.href='https://bot.orimon.ai/deploy/index.html?tenantId=29f76204-ad03-4a1a-a73f-a9db382d423e&testBot=true&defaultOpen=true';">Chatea con nosotros</button>
+    </nav>
+
+    <section class="image-container" id="image-container img">
+        <div class="img-contenido">
+           <h1>AdminLine</h1>
+            <h2>¿Quienes somos?</h2>
+            <p>Somos un emprendimiento conformado por diecisiete (17) socios que brinda a diversas entidades<br>de trabajo estrategias deautomatización de procesos para simplificar y optimizar tareas<br>administrativas, reduciendo costos y tiempo para quienes contratan nuestros servicios.</p>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>Mision</h3>
+            <p> En Adminline.C.A. Ayudamos a empresas de diversos sectores a potenciar su crecimiento a través de estrategias especializadas en ventas, servicio al cliente, capacitación y actualización del personal y  marketing digital.
+                Nos enfocamos en implementar las mejores prácticas de mercado, optimizando procesos comerciales y fortaleciendo la relación con los clientes a través de una consultoría personalizada y acciones formativas, proporcionamos herramientas que generan resultados exitosos.
+                </p>
+                <section class="img">
+                    <div class="img-2">
+                        <img src="logo fondo negro.jpeg">
+                    </div>
+                </section>
+        </div>
+
+        <div class="feature-card">
+            <h3>Visión</h3>
+            <p> Ser reconocidos por impulsar la transformación empresarial mediante especializada en ventas, servicios al cliente, capacitación y actualización del personal y marketing digital, nuestros objetivos es convertimos en aliados estratégicos de las empresas ayudándolas en mejorar su competitividad en el mercado.</p>
+                <section class="img">
+                    <div class="img-2">
+                        <img src="logo fondo negro.jpeg">
+                    </div>
+                </section>
+        </div>
+
+        <div class="feature-card">
+            <h1>SERVICIOS</h1>
+            <ul>
+                <li>
+                    <h2>Automatización de procesos</h2>
+                    <p> Simplificar y optimizan tareas empresariales para reducir costos y mejorar en las respuestas.</p>
+                </li>
+                <li>
+                    <h2>Gestión de ventas</h2>
+                    <p> Incluye prospección, constataciones, facturación, contratos, fidelización y más.</p>
+                </li>
+                <li>
+                    <h2>Servicio al cliente</h2>
+                    <p> Potenciamos marcas, servicios o productos ofreciendo herramientas que permita captar y mantener la clientela de quienes contratan nuestros servicios tales como: Chatsbot, chats en vivo y correos electrónicos de marketing.</p>
+                </li>
+                <li>
+                    <h2>Capacitación y actualización del personal</h2>
+                    <p>Ofrecemos formación programadas de capacitación y actualización en diversas áreas (capacitación en técnicas de ventas y cierre, capacitación en atención y servicio al cliente, capacitación en marketing digital, comunicación asertiva, liderazgo) con el objetivo de potenciar la efectividad de los empleados</p>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="feature-card">
+            <h2>VALORES INSTITUCIONALES</h2>
+            <ul>
+                <li>
+                    <h2>Inovación</h2>
+                    <p>Promovemos la creatividad y las búsquedas constantes de soluciones que automaticen sus procesos, para satisfacer las necesidades de nuestros clientes.</p>
+                </li>
+                <li>
+                    <h2>Gestión de ventas</h2>
+                    <p> Incluye prospección, constataciones, facturación, contratos, fidelización y más.</p>
+                </li>
+                <li>
+                    <h2>Servicio al cliente</h2>
+                    <p> Potenciamos marcas, servicios o productos ofreciendo herramientas que permita captar y mantener la clientela de quienes contratan nuestros servicios tales como: Chatsbot, chats en vivo y correos electrónicos de marketing.</p>
+                </li>
+                <li>
+                    <h2>Capacitación y actualización del personal</h2>
+                    <p>Ofrecemos formación programadas de capacitación y actualización en diversas áreas (capacitación en técnicas de ventas y cierre, capacitación en atención y servicio al cliente, capacitación en marketing digital, comunicación asertiva, liderazgo) con el objetivo de potenciar la efectividad de los empleados</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <div class="img-1">
+                <img src="logotipo.png" alt="Descripción de la imagen">
+            </div>
+        </div>
+
+
+        <section class="comments-section" id="comments">
+            <h2>Comentarios</h2>
+            <form id="commentForm">
+                <input type="text" id="name" placeholder="Tu nombre" required>
+                <textarea id="comment" placeholder="Tu comentario" required></textarea>
+                <button type="submit">Enviar Comentario</button>
+            </form>
+            <div id="commentsList"></div>
+        </section>
+
+    </section>
+
+    <footer>
+       <p> © 2023 Adminline. Todos los derechos reservados.</p>
+    </footer>
+    
+
+    <script>
+        // Animación al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.feature-card').forEach((el) => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(30px)';
+            observer.observe(el);
+        });
+
+        // Smooth scroll para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Función para cargar comentarios desde localStorage
+    function loadComments() {
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.forEach(comment => {
+            displayComment(comment.name, comment.comment);
+        });
+    }
+
+    // Función para mostrar un comentario en la lista
+    function displayComment(name, comment) {
+        const commentElement = document.createElement('div');
+        commentElement.innerHTML = `<strong>${name}</strong>: <p>${comment}</p>`;
+        commentElement.style.border = '1px solid #ccc';
+        commentElement.style.padding = '10px';
+        commentElement.style.marginTop = '10px';
+        commentElement.style.borderRadius = '5px';
+        document.getElementById('commentsList').appendChild(commentElement);
+    }
+
+    // Cargar comentarios al inicio
+    loadComments();
+
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita el envío del formulario
+
+        // Obtiene los valores del formulario
+        const name = document.getElementById('name').value;
+        const comment = document.getElementById('comment').value;
+
+        // Guarda el comentario en el almacenamiento local
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.push({ name, comment });
+        localStorage.setItem('comments', JSON.stringify(comments));
+
+        // Muestra el nuevo comentario
+        displayComment(name, comment);
+
+        // Limpia el formulario
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+    });
+
+    </script>
+</body>
+</html>
