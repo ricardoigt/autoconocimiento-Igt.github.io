@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>el autoconocimiento</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00ffd1;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #videoElement {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background: #000;
+    z-index: 1;
+    filter: brightness(0.85) contrast(1.1);
+    /* Removed transform scaleX to avoid mirror effect */
+  }
+  .phrase-overlay {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    font-weight: 800;
+    text-align: center;
+    color: #FFFFFF;
+    user-select: none;
+    pointer-events: none;
+    max-width: 90vw;
+    padding: 0 10px;
+    z-index: 5;
+    font-style: italic;
+  }
+  .info-text {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    font-size: 1rem;
+    color: #ff5555;
+    text-shadow: 0 0 8px #00ffd1;
+    z-index: 3;
+    user-select: none;
+  }
+
+  @media (max-width: 600px) {
+    .phrase-overlay {
+      font-size: 6vw;
+    }
+    .info-text {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <video autoplay playsinline muted id="videoElement"></video>
+    <div class="phrase-overlay">Esta es la persona más importante de tu vida❤️❤️</div>
+    <div class="info-text">Accediendo a la cámara...</div>
+  </div>
+
+<script>
+  const video = document.getElementById('videoElement');
+  const infoText = document.querySelector('.info-text');
+
+  async function startCamera() {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      video.srcObject = stream;
+      infoText.textContent = "Cámara activa";
+    } catch (err) {
+      infoText.textContent = "Error al acceder a la cámara: " + err.message;
+      infoText.style.color = '#ff5555';
+    }
+  }
+
+  startCamera();
+</script>
+</body>
+</html>
+
